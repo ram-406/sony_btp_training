@@ -1,0 +1,11 @@
+id,name,age,gender,rollNo,class_id,houseNo,landmark,city,country,region
+1,Arjun Kumar,19,Male,ECE101,1,12A,Near Bus Stand,Chennai,India,Tamil Nadu
+2,Priya Sharma,20,Female,ECE102,1,45B,City Mall,Bengaluru,India,Karnataka
+3,Rohit Verma,21,Male,ECE103,2,78,Central Park,Delhi,India,Delhi
+4,Ananya Iyer,19,Female,ECE104,2,9C,Temple Road,Madurai,India,Tamil Nadu
+5,Karthik Reddy,22,Male,ECE105,3,102,IT Hub,Gachibowli,India,Telangana
+6,Neha Singh,20,Female,ECE106,3,56A,Metro Station,Noida,India,Uttar Pradesh
+7,Aman Gupta,21,Male,ECE107,4,34,Clock Tower,Jaipur,India,Rajasthan
+8,Sneha Patil,19,Female,ECE108,4,88B,Market Yard,Pune,India,Maharashtra
+9,Vikram Joshi,22,Male,ECE109,5,17D,Lake View,Udaipur,India,Rajasthan
+10,Pooja Nair,20,Female,ECE110,5,61,Beach Road,Kochi,India,Kerala

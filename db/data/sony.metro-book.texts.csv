@@ -1,0 +1,41 @@
+id,locale,bookName
+1,en,Signals and Systems
+1,ja,信号とシステム
+1,ru,Сигналы и системы
+1,fr,Signaux et systèmes
+2,en,Digital Signal Processing
+2,ja,デジタル信号処理
+2,ru,Цифровая обработка сигналов
+2,fr,Traitement numérique du signal
+3,en,Microelectronic Circuits
+3,ja,マイクロエレクトロニクス回路
+3,ru,Микроэлектронные схемы
+3,fr,Microcircuits électroniques
+4,en,Electronic Devices and Circuit Theory
+4,ja,電子デバイスと回路理論
+4,ru,Электронные устройства и теория цепей
+4,fr,Dispositifs électroniques et théorie des circuits
+5,en,Communication Systems
+5,ja,通信システム
+5,ru,Системы связи
+5,fr,Systèmes de communication
+6,en,Digital Communications
+6,ja,デジタル通信
+6,ru,Цифровая связь
+6,fr,Communications numériques
+7,en,Control Systems Engineering
+7,ja,制御システム工学
+7,ru,Инженерия систем управления
+7,fr,Génie des systèmes de commande
+8,en,Embedded Systems
+8,ja,組込みシステム
+8,ru,Встраиваемые системы
+8,fr,Systèmes embarqués
+9,en,Principles of Communication Systems
+9,ja,通信システムの原理
+9,ru,Принципы систем связи
+9,fr,Principes des systèmes de communication
+10,en,VLSI Design
+10,ja,VLSI設計
+10,ru,Проектирование СБИС
+10,fr,Conception VLSI

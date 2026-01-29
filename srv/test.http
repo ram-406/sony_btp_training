@@ -1,0 +1,93 @@
+### get service
+http://localhost:4004/odata/v4/CatalogService/
+
+### load metadata
+http://localhost:4004/odata/v4/CatalogService/$metadata
+
+###GET All employee data
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv
+
+###GET one employee
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+
+###POST Create EMployee
+POST http://localhost:4004/odata/v4/CatalogService/EmployeeSrv
+Content-Type: application/json
+
+{
+    "nameFirst": "Test post",
+    "nameMiddle": "",
+    "nameLast": "post test",
+    "nameInitials": "",
+    "sex": "F",
+    "language": "E",
+    "phoneNumber": "+1 224 374 524",
+    "email": "test.post@itelo.com",
+    "loginName": "SPRINGS",
+    "Currency_code": "USD",
+    "salaryAmount": 55549,
+    "accountNumber": "111222333",
+    "bankId": "510005",
+    "bankName": "My Bank of Antioch"
+}
+### PATCH
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSrv/218bec35-174d-400d-9b52-d744ff62ea26
+Content-Type: application/json
+
+
+{
+  "Currency_code": "EUR",
+  "salaryAmount": 10000000
+}
+
+
+
+
+###DELETE Single Employee data - remove
+DELETE http://localhost:4004/odata/v4/CatalogService/EmployeeSrv/218bec35-174d-400d-9b52-d744ff62ea26
+
+###GET All purchase orders
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet
+
+
+###GET Single purchase orders
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/74867AD200E41EDBA5D8B0C98DC2C052
+
+
+###GET PO and its items with lose coupling - $expand
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/74867AD200E41EDBA5D8B0C98DC2C052?$expand=Items
+
+
+###Pagigation - load data chunk by chunk - $top , $skip
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv?$top=2&$skip=2
+
+
+###Total Count of POs
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/$count
+
+
+###Filtering data of Employee
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv?$filter=bankName eq 'My Bank of New York'
+
+
+###Filtering data of Employee - pattern filters
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv?$filter=contains(nameFirst,'Su')
+
+###Child entity filter possible with CAP based oData V4
+###Example: Get those orders where their item has value more than 3000
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet?$filter=Items/GROSS_AMOUNT le 3000
+
+
+###Example: Get those orders where their item has value more than 3000
+http://localhost:4004/odata/v4/CatalogService/getLargestPurcaseOrder
+
+
+### actions
+POST http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/74867AD200E41EDBA5D8B0C98DC2C052/boost
+Content-Type: application/json
+
+
+{}
+
+
+
